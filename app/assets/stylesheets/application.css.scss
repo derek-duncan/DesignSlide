@@ -1,0 +1,18 @@
+@import "compass/reset";
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+* {
+     text-shadow: 0 1px 1px rgba(255,255,255,.3);
+     color: #3d3d3d;
+}

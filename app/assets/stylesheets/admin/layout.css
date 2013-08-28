@@ -1,0 +1,130 @@
+/* line 1, ../layout.css.scss */
+html, body {
+  background-image: -o-linear-gradient(-90deg, white 0%, #f7f7f7 100%);
+  background-image: -moz-linear-gradient(-90deg, white 0%, #f7f7f7 100%);
+  background-image: -webkit-linear-gradient(-90deg, white 0%, #f7f7f7 100%);
+  background-image: -ms-linear-gradient(-90deg, white 0%, #f7f7f7 100%);
+  background-image: linear-gradient(-180deg, #ffffff 0%, #f7f7f7 100%);
+  background-repeat: no-repeat;
+}
+
+/* line 9, ../layout.css.scss */
+body.container {
+  width: 100%;
+}
+
+/* line 12, ../layout.css.scss */
+div.company {
+  float: left;
+  padding-left: 5.5%;
+}
+/* line 15, ../layout.css.scss */
+div.company img.logo {
+  float: left;
+}
+/* line 18, ../layout.css.scss */
+div.company h1 {
+  padding-left: 14px;
+  float: left;
+  font-family: LucidaGrande-Bold;
+  font-size: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 27, ../layout.css.scss */
+header.header {
+  z-index: 200;
+  top: 0;
+  padding: 1% 0;
+  width: 100%;
+  line-height: 31px;
+  position: relative;
+  background-image: -o-radial-gradient(50% 100%, #40e692 50%, #64eba6 91%);
+  background-image: -moz-radial-gradient(50% 100%, #40e692 50%, #64eba6 91%);
+  background-image: -webkit-radial-gradient(50% 100%, #40e692 50%, #64eba6 91%);
+  background-image: -ms-radial-gradient(50% 100%, #40e692 50%, #64eba6 91%);
+  background-image: radial-gradient(50% 100%, #40e692 50%, #64eba6 91%);
+  -moz-box-shadow: 0px 2px 0px 0px #44c583, 0px 2px 8px 0px rgba(107, 107, 107, 0.14), inset 0px 0px 17px 0px rgba(23, 153, 86, 0.07);
+  -webkit-box-shadow: 0px 2px 0px 0px #44c583, 0px 2px 8px 0px rgba(107, 107, 107, 0.14), inset 0px 0px 17px 0px rgba(23, 153, 86, 0.07);
+  box-shadow: 0px 2px 0px 0px #44c583, 0px 2px 8px 0px rgba(107, 107, 107, 0.14), inset 0px 0px 17px 0px rgba(23, 153, 86, 0.07);
+  -webkit-animation-name: header;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes header {
+  /* line 52, ../layout.css.scss */
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+
+  /* line 53, ../layout.css.scss */
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* line 55, ../layout.css.scss */
+nav > ul {
+  position: relative;
+  float: right;
+  padding-right: 5.5%;
+}
+/* line 59, ../layout.css.scss */
+nav > ul li {
+  float: left;
+  padding: 0 14px;
+}
+/* line 62, ../layout.css.scss */
+nav > ul li a {
+  font-family: LucidaGrande-Bold;
+  font-size: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 69, ../layout.css.scss */
+nav > ul li:last-child {
+  padding-right: 0;
+}
+
+/* line 73, ../layout.css.scss */
+header.fixedHeader {
+  position: fixed;
+  padding: 0.2%;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 81, ../layout.css.scss */
+header.fixedHeader:hover {
+  opacity: 1;
+}
+/* line 84, ../layout.css.scss */
+header.fixedHeader div.company {
+  padding-left: 7%;
+}
+/* line 87, ../layout.css.scss */
+header.fixedHeader ul {
+  padding-right: 7%;
+}
+/* line 90, ../layout.css.scss */
+header.fixedHeader a {
+  font-size: 16px;
+}
+/* line 93, ../layout.css.scss */
+header.fixedHeader h1 {
+  display: none;
+}
+
+/* line 97, ../layout.css.scss */
+section.page-content {
+  padding-top: 3%;
+  width: 90%;
+  margin-left: 5%;
+}

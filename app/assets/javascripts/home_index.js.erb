@@ -1,0 +1,28 @@
+function timeline() {
+	$('.timeline_item').each(function(i) {
+		$(this).css({
+			'height': $(this).siblings($('.content')).eq(0).outerHeight(true) + 10
+		});
+		$('.line').eq(i).css({
+				'height': $('.content').eq(i).outerHeight() - $('.timeline_item p').eq(i).outerHeight() + 10
+			});
+	});
+}
+$(window).load(function() {
+	timeline();
+	$('.fit img').css({
+		'top': - $(this).height()/4
+	});
+	$('.timeline_item p').hover(function() {
+		$(this).css({
+			'padding' : 12
+		});
+		$('.timeline_item').css({
+			'width' : 71
+		});
+	}, function() {
+		$(this).css({
+			'padding' : 18
+		});
+	});
+});

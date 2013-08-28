@@ -1,0 +1,15 @@
+<%= content_for :head do %>
+	<%= stylesheet_link_tag "admin/posts_index" %>
+<% end %>
+<% @posts.each do |post| %>
+<%= link_to admin_post_path(post) do %>
+	<div class="post">
+		<p class="title">
+			<%= post.title %>
+		</p>  <br>
+
+		<%= markdown(truncate(post.content, :length => 200)) %>
+	</div>
+	<% end %>
+<% end %>
+<%= link_to "Create New Post", new_admin_post_path %> <br>

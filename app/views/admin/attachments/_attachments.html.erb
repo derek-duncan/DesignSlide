@@ -1,0 +1,6 @@
+<div class="attachments">
+<% @attachs.each do |pic| %>
+	<%= image_tag pic.path, :width => 50, :class => "uploaded" %>
+	<input type="button" onClick="addPost()" class="addPost">
+<% end %>
+</div>

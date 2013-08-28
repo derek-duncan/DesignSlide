@@ -1,0 +1,18 @@
+<%= content_for :head do %>
+	<%= javascript_include_tag "application", "attachments/add-attachments" %>
+	<%= stylesheet_link_tag "attach_new" %>
+<% end %>
+<%= form_for @post, :url => {:controller => "posts", :action => "updatePost"} , :method => "put" do |t|%>
+	<%= t.hidden_field :id, :value => @post.id %>
+	<%= t.text_area :content, :class => "post-content" %> <br>
+	<%= t.submit "Publish Post" %>
+<% end %>
+<hr>
+<h1>Add Images</h1>
+<%= form_for [:admin, @post, @attachment], :remote => true, :class => "image-form" do |f| %>
+	<%= f.hidden_field :post_id, :value => @post.id %>
+	<%= f.file_field :path, :multiple => true %> <br>
+	<%= f.submit "Upload" %>
+<% end %>
+<hr>
+<%= render 'admin/attachments/attachments' %>

@@ -1,0 +1,26 @@
+<%= content_for :head do %>
+	<%= stylesheet_link_tag "admin/post_edit" %>
+	<%= javascript_include_tag "admin/posts/post_edit" %>
+<% end %>
+<%= form_for [:admin, @post] do |t| %>
+	<%= t.label :title %> <br>
+	<%= t.text_field :title %>
+	<br>
+	<%= t.label :author %> <br>
+	<%= t.text_field :author %>
+	<br>
+	<%= t.label :content %> <br>
+	<%= t.text_area :content %>
+	<br>
+	<%= t.submit "Update Post" %>
+<% end %>
+<%= label_tag :attachments %> <br>
+<br>
+<% for pic in @attach do %>
+	<div class="image">
+		<%= image_tag pic.path, :height => "100px"%>
+		<%= button_to "X", admin_post_attachment_path(@post, pic), :method => :delete %>
+		<br>
+	</div>
+<% end %>
+<%= link_to "Add Attachments", new_admin_post_attachment_path(@post) %>

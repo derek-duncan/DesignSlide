@@ -1,0 +1,55 @@
+/* line 1, posts_index.css.scss */
+section.page-content {
+  width: 40%;
+}
+
+/* line 4, posts_index.css.scss */
+a {
+  text-decoration: none;
+  color: #4b84a8;
+  font: 1em "Open Sans";
+}
+
+/* line 9, posts_index.css.scss */
+div.post {
+  -webkit-animation: opacity 1.5s ease-in-out;
+  margin: 0 0 4% 0;
+  font: 1em "Open Sans";
+  border-bottom: 1px solid #c8c8c8;
+  text-align: justify;
+}
+
+/* line 17, posts_index.css.scss */
+p {
+  padding: 0;
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+/* line 22, posts_index.css.scss */
+.title {
+  text-decoration: none;
+  color: #192932;
+  font-size: 1.5em;
+}
+
+/* line 27, posts_index.css.scss */
+div.image {
+  border: 1px solid #d6d6d6;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes opacity {
+  /* line 35, posts_index.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 36, posts_index.css.scss */
+  100% {
+    opacity: 1;
+  }
+}

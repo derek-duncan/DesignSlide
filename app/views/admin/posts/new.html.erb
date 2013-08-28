@@ -1,0 +1,13 @@
+<%= form_for [:admin, @post], :html => {:multipart => true} do |t| %>
+	<%= t.label :title %> <br>
+	<%= t.text_field :title %>
+	<br>
+	<%= t.label :author %> <br>
+	<%= t.text_field :author %>
+	<br>
+	<%= t.label :content %> <br>
+	<%= t.text_area :content %>
+<br>
+	<%= t.submit "Create Post" %>
+<% end %>
+

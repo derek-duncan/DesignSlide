@@ -1,0 +1,2 @@
+		var img = $("<%= escape_javascript("#{render :partial => 'attachments', :locals => {:attach => attach}}").html_safe %>");
+		$('.attachments').replaceWith(img);

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DesignSlideLab Web Designer's resources and tutorials</title>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <%= stylesheet_link_tag "application", "layout" %>
+
+  <%= javascript_include_tag "jquery", "home_index", "header" %>
+	<%= yield :head %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container clearfix">
+	<header class="header clearfix">
+		<div class="company">
+			<%= image_tag "designslide_logo.png", :alt => "DesignSlideLab Logo", :class => "logo" %>
+			<h1> designslidelab </h1>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<%= link_to "Shop" %>
+				</li>
+				<li>
+					<%= link_to "Blog" %>
+				</li>
+				<li>
+					<%= link_to "Works" %>
+				</li>
+				<li>
+					<%= link_to "About" %>
+				</li>
+			</ul>
+		</nav>
+		</header>
+		<section class="page-content clearfix">
+			<%= yield %>
+		</section>
+</div>
+
+</body>
+</html>

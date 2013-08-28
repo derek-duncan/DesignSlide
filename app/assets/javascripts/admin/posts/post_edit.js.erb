@@ -1,0 +1,6 @@
+$(function(){
+	var all = $('textarea').val();
+	var text = all.match(/(<img([^*]+)>)/);
+	all = all.replace(/(<img([^*]+)>)/, "<div>" + text[1] + "</div>");
+	$('textarea').val(all);
+});

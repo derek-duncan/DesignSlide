@@ -1,0 +1,11 @@
+<%= content_for :head do %>
+	<%= stylesheet_link_tag "admin/post_show" %>
+	<%= javascript_include_tag "admin/posts/post_show" %>
+<% end %>
+<div class="content">
+	<h2 class="title"><%= @post.title %></h2><br>
+	<%= markdown(@post.content) %> <br>
+</div>
+<div class="author"><p><%= @post.author %></p></div>
+<%= link_to "Edit", edit_admin_post_path(@post) %>
+<%= button_to "Delete", admin_post_path(@post), :method => :delete %>

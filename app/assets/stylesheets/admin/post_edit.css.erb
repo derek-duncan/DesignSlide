@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Calendas';
+    src: url('<%= asset_path('Calendas_Plus.ttf') %>');
+}
+section.page-content {
+    width: 90%;
+    // margin-left: 10%;
+}
+label, a {
+	font: 1em 'Open Sans';
+    text-decoration: none;
+}
+input[type="text"], textarea {
+	border: 1px solid #e3e3e3;
+	padding: 1% 2%;
+	font: 1em "Calendas";
+    width: 96%;
+    outline: none;
+}
+input:focus, textarea:focus {
+    border-color: #c6c6c6;
+}
+textarea {
+	padding: 2%;
+}
+.image {
+    float: left;
+    position: relative;
+}
+.image input {
+    background: #f2f2f2;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    padding: 6%;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"] {
+    background: #dcdcdc;
+    font: 0.8em 'Open Sans';
+    padding: 0.8%;
+    border: none;
+    cursor: pointer;
+}
